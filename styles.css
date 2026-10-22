@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Arexa";
+  src: url("assets/fonts/ArexaDemo-Regular.otf")
+       format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arexa";
+  src: url("assets/fonts/Ghastly Panic.ttf")
+       format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arexa";
+  src: url("assets/fonts/Storm Gust.otf")
+       format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: url("assets/background.jpg") center / cover no-repeat;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -8,12 +32,60 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.decoration {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bat1 {
+  width: 120px;
+  top: 50%;
+  right: 10%;
+  transform: scaleX(-1);
+}
+
+.bat2 {
+  width: 120px;
+  top: 50%;
+  left: 10%;
+}
+
+.hanging-spider1 {
+  width: 200px;
+  top: 0;
+  left: 15%;
+}
+
+.hanging-spider2 {
+  width: 200px;
+  top: 0;
+  left: 45%;
+}
+
+.hanging-spider3 {
+  width: 200px;
+  top: 0;
+  left: 75%;
+}
+
+.spider-web1 {
+  width: 180px;
+  bottom: 0;
+  right: 0;
+}
+
+.spider-web2 {
+  width: 180px;
+  bottom: 0;
+  left: 0;
+}
+
+
+.container {
+  width:90%
+  max-width: 1100px;
+  margin:0 auto;
 }
 
 .layout {
@@ -24,4 +96,29 @@ header {
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  color: #eee5dc;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo em {
+  color: #c47b83;
+}
+
+.message {
+  color: #b45b65;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
