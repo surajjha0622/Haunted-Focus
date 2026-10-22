@@ -144,10 +144,14 @@ body {
 }
 
 .time {
-  font-family: "Arexa", sans-serif;
-  font-size: clamp(76px, 10vw, 112px);
-  color: #f3e7e7;
-  text-shadow: 0 0 12px rgba(210, 40, 65, 0.35);
-  letter-spacing: 2px;
+  font-family: "Ghastly", sans-serif;
+  font-size: clamp(80px, 11vw, 120px);
+  color: #f3dada;
+  letter-spacing: 5px;
   margin: 10px 0 30px;
+
+  text-shadow:
+    0 0 4px #ff263f,
+    0 0 15px rgba(220, 20, 45, 0.8),
+    3px 2px 0 rgba(100, 0, 10, 0.8);
 }
