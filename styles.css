@@ -7,15 +7,15 @@
 }
 
 @font-face {
-  font-family: "Arexa";
+  font-family: "Ghastly";
   src: url("assets/fonts/Ghastly Panic.ttf")
-       format("opentype");
+       format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Arexa";
+  font-family: "Storm";
   src: url("assets/fonts/Storm Gust.otf")
        format("opentype");
   font-weight: normal;
@@ -83,7 +83,7 @@ body {
 
 
 .container {
-  width:90%
+  width:90%;
   max-width: 1100px;
   margin:0 auto;
 }
@@ -91,23 +91,25 @@ body {
 .layout {
   width: 100%;
   max-width: 800px;
+  margin: 2rem auto 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 20px 0;
+  gap: 8px;
 }
 
 .logo {
+  font-family: "Ghastly", sans-serif;
   color: #eee5dc;
-  font-size: 24px;
+  font-size: 80px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -117,8 +119,35 @@ body {
 }
 
 .message {
-  color: #b45b65;
-  font-size: 12px;
+  font-family: "Storm",sans-serif;
+  color: #e5394d;
+  font-size: 32px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.timer {
+  width: 100%;
+  max-width: 525px;
+  min-height: 310px;
+  padding: 38px 30px;
+  box-sizing: border-box;
+  text-align: center;
+
+  background: rgba(8, 5, 13, 0.88);
+  border: 1px solid rgba(196, 60, 79, 0.65);
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 35px rgba(120, 20, 40, 0.2),
+    inset 0 0 40px rgba(80, 15, 30, 0.12);
+}
+
+.time {
+  font-family: "Arexa", sans-serif;
+  font-size: clamp(76px, 10vw, 112px);
+  color: #f3e7e7;
+  text-shadow: 0 0 12px rgba(210, 40, 65, 0.35);
+  letter-spacing: 2px;
+  margin: 10px 0 30px;
 }
